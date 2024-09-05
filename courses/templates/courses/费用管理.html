@@ -1,0 +1,16 @@
+<!-- courses/templates/courses/费用管理.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>费用管理</title>
+</head>
+<body>
+    <h1>费用管理</h1>
+    <ul>
+        {% for 费用 in 费用们 %}
+            <li>{{ 费用.amount }} - {{ 费用.date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

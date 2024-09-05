@@ -1,0 +1,19 @@
+<!-- courses/templates/courses/课程列表.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>课程列表</title>
+</head>
+<body>
+    <h1>课程列表</h1>
+    <ul>
+        {% for 课程 in 课程 %}
+            <li>
+                <h2>{{ 课程.name }}</h2>
+                <p>{{ 课程.description }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

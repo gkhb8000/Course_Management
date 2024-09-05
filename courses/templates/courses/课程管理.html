@@ -1,0 +1,16 @@
+<!-- courses/templates/courses/课程管理.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>课程管理</title>
+</head>
+<body>
+    <h1>课程管理</h1>
+    <ul>
+        {% for 课程 in 课程们 %}
+            <li>{{ 课程.name }} - {{ 课程.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

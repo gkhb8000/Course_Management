@@ -1,0 +1,16 @@
+<!-- courses/templates/courses/收入管理.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>收入管理</title>
+</head>
+<body>
+    <h1>收入管理</h1>
+    <ul>
+        {% for 收入 in 收入们 %}
+            <li>{{ 收入.amount }} - {{ 收入.date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

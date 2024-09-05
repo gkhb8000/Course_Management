@@ -1,0 +1,16 @@
+<!-- courses/templates/courses/学生管理.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>学生管理</title>
+</head>
+<body>
+    <h1>学生管理</h1>
+    <ul>
+        {% for 学生 in 学生们 %}
+            <li>{{ 学生.name }} - {{ 学生.age }}岁</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
