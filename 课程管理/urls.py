@@ -20,8 +20,20 @@ from django.contrib import admin
 from django.urls import path, include
 from courses import views
 
+#urlpatterns = [
+    #path('admin/', admin.site.urls),
+    #path('课程/', include('courses.urls')),
+    #path('', views.课程列表, name='主页'),  # 根URL映射到课程列表视图
+#]
+#urlpatterns = [
+    #path('admin/', admin.site.urls),
+    #path('', include('courses.urls')),
+#]
+
+#urlpatterns = [
+    #path('courses/', include('courses.urls')),
+#]
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('课程/', include('courses.urls')),
-    path('', views.课程列表, name='主页'),  # 根URL映射到课程列表视图
+    path('', views.index, name='index'),
 ]

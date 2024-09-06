@@ -3,6 +3,9 @@
 from django.shortcuts import render
 from .models import Student, Course, Income, Expense
 
+def index(request):
+    return render(request, 'courses/index.html')
+
 def 学生管理(request):
     学生 = Student.objects.all()
     return render(request, 'courses/学生管理.html', {'学生': 学生})
